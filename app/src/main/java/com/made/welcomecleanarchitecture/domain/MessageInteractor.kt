@@ -4,5 +4,4 @@ class MessageInteractor(private val messaRepository: IMessageRepository) : Messa
     override fun getMessage(name: String): MessageEntity {
         return messaRepository.getWelcomeMessage(name)
     }
-
 }
